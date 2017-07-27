@@ -71,7 +71,8 @@ public class CatalogActivity extends AppCompatActivity implements
         values.put(ProductEntry.COLUMN_PRODUCT_NAME, "Toto");
         values.put(ProductEntry.COLUMN_PRODUCT_QUANTITY, 20);
         values.put(ProductEntry.COLUMN_PRODUCT_PRICE, 10);
-        values.put(ProductEntry.COLUMN_PRODUCT_IMAGE, R.drawable.trophy);
+        Uri path = Uri.parse("android.resource://" + getPackageName() + "/drawable/trophy");
+        values.put(ProductEntry.COLUMN_PRODUCT_IMAGE, path.toString());
 
         getContentResolver().insert(ProductEntry.CONTENT_URI, values);
     }
