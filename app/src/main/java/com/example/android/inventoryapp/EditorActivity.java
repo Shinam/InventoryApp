@@ -478,33 +478,21 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.AlertDialogCustom);
         builder.setMessage(R.string.unsaved_changes_dialog_msg);
         builder.setPositiveButton(R.string.discard, discardButtonClickListener);
-        builder.setNegativeButton(R.string.keep_editing, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                if (dialog != null) {
-                    dialog.dismiss();
-                }
-            }
-        });
+        builder.setNegativeButton(R.string.cancel, null);
 
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
     }
 
     private void showDeleteConfirmationDialog() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        AlertDialog.Builder builder = new AlertDialog.Builder(this, R.style.AlertDialogCustom);
         builder.setMessage(R.string.delete_dialog_msg);
         builder.setPositiveButton(R.string.delete, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 deleteProduct();
             }
         });
-        builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
-            public void onClick(DialogInterface dialog, int id) {
-                if (dialog != null) {
-                    dialog.dismiss();
-                }
-            }
-        });
+        builder.setNegativeButton(R.string.cancel, null);
 
         AlertDialog alertDialog = builder.create();
         alertDialog.show();
