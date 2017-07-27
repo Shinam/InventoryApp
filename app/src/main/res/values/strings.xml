@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">InventoryApp</string>
+    <string name="emptyList">List Empty</string>
+
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+
+    <string name="action_delete_all_entries">Delete All Products</string>
+
+    <string name="category_overview">Overview</string>
+
+    <string name="hint_product_name">Name</string>
+
+    <string name="category_quantity">Quantity</string>
+
+    <string name="hint_product_quantity">Quantity</string>
+
+    <string name="hint_product_price">Price</string>
+
+    <string name="category_price">Price</string>
+
+    <string name="unit_product_dollar">$</string>
+
+    <string name="category_supplier">Supplier</string>
+
+    <string name="send_mail">Send mail to supplier</string>
+
+    <string name="category_image">Image</string>
+
+    <string name="add_image">Add image</string>
+
+    <string name="title_new_product">New Product</string>
+
+    <string name="title_edit_product">Product Details</string>
+
+    <string name="supplier_email">supplier@supplier.com</string>
+
+    <string name="supplier_subject">Buy product</string>
+
+    <string name="empty_field_product">all fields need to be filled</string>
+
+    <string name="insert_product_failed">Error with saving product</string>
+
+    <string name="insert_product_successful">Product saved</string>
+
+    <string name="update_product_failed">Error with updating product</string>
+
+    <string name="update_product_successful">Product updated</string>
+
+    <string name="action_save">Save</string>
+
+    <string name="action_delete">Delete</string>
+
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <string name="discard">Discard</string>
+
+    <string name="keep_editing">Keep Editing</string>
+
+    <string name="delete_dialog_msg">Delete this product?</string>
+
+    <string name="delete">Delete</string>
+
+    <string name="cancel">Cancel</string>
+
+    <string name="editor_delete_product_failed">Error with deleting product</string>
+
+    <string name="editor_delete_product_successful">Product deleted</string>
+</resources>
